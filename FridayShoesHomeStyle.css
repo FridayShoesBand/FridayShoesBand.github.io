@@ -1,0 +1,201 @@
+*{
+   margin: 0;
+   padding: 0%;
+   font-family: sans-serif;
+}
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   background: #333;
+   color: cornsilk;
+   line-height: 1.6;
+   height: 100vh;
+   /*overflow: hidden;*/
+}
+.container {
+   width: 100%;
+   height: 100%;
+   /* css smooth scroll */    
+   /*overflow-y: scroll;
+   scroll-behavior: smooth;
+   */
+   scroll-snap-type: mandatory;
+}
+.navbar {
+   position: fixed;
+   top: 0;
+   z-index: 1;
+   display: flex;
+   width: 100%;
+   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+   background-size: 400% 400%;
+   animation: gradient2 15s ease infinite;
+   opacity: ;
+}
+   @keyframes gradient2 {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+.navbar ul {
+   display: flex;
+   list-style: none;
+   width: 100%;
+   justify-content: center;
+}
+.navbar ul li {
+   margin: 0 3rem;
+   padding: 1rem;
+   opacity: 1;
+}
+.navbar ul li a {
+   text-decoration: none;
+   text-transform: uppercase;
+   color: cornsilk;     
+   opacity: 1;
+}
+
+.navbar ul li a:hover {
+   color: skyblue;
+   opacity: 1;
+}
+section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 100%;
+   height: 100vh;
+   scroll-snap-align: center;
+}
+section h1 {
+   font-size: 4rem;
+}
+section a {
+    font-size: 1.5rem;  
+}
+
+section#Home {
+   background: url(images/IMG_0388.JPG) no-repeat center center/
+   cover;
+}
+section#Home img {
+   width: 400px;
+   height: 400px;
+   top: 20%;
+}
+section#Contact {
+   background: url(images/IMG_0383.JPG) no-repeat center center/
+   cover;
+   color: cornsilk;
+}
+section#Contact a{
+   font-size: x-large;
+   color: rgb(255, 252, 100);
+}
+section#Songs {
+   background: url(images/IMG_0412.JPG) no-repeat center center/
+   cover;
+   color: cornsilk;
+}
+section#Songs ul {
+   list-style: none;
+   font-size: large;
+   text-align: left;
+   color: cornsilk;
+}
+section#About {
+   /*background: rgb(2, 36, 17) no-repeat center center;*/
+
+      width: 100%;
+      height:100vh;
+
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        /*cover;
+   display: block;*/
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+section#About h1 {
+   font-size: large;
+   display: block;
+   color: cornsilk;
+   text-align: left;
+   font-size: xx-large;
+}
+section#About p {
+   font-size: large;
+   padding-right: 10%;
+   color: cornsilk;
+   text-align: left;
+}
+section#Merch {
+   background: url(images/IMG_0502.JPG) no-repeat center center/
+   cover;
+}
+section#SocialMedia {
+   background: url(images/IMG_0406.JPG) no-repeat center center/
+   cover;
+}
+
+.column {
+   float: left;
+   width: 50%;
+ }
+ 
+ /* Clear floats after the columns */
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ .fa {
+   padding: 30px;
+   font-size: 45px;
+   width: 45px;
+   text-align: center;
+   text-decoration: none;
+   margin: 20px 8px;
+   border-radius: 50%;
+ }
+ 
+ .fa:hover {
+     opacity: 0.7;
+ }
+ 
+ .fa-facebook {
+   background: rgb(0, 102, 255);
+   color: white;
+ }
+ 
+ .fa-twitter {
+   background: rgb(0, 183, 255);
+   color: white;
+ }
+ 
+ .fa-instagram {
+   background: rgb(255, 0, 0);
+   color: white;
+ }
+ .pleaseWork {
+    opacity: 1;
+ }
